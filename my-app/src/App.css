@@ -1,0 +1,49 @@
+.App {
+  max-height: 100vh;
+  display: grid;
+  grid-gap: 10px;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+    "a a"
+    "b c";
+}
+.mainHeader {
+  grid-area: a;
+  background: linear-gradient(45deg, #607D8B, #455A64);
+}
+.mainHeader img {
+  height: 40px;
+  width: 40px;
+}
+.asideNav {
+  grid-area: b;
+  background: linear-gradient(45deg, #455A64, #607D8B);
+  color: #ffffff;
+}
+.asideNav ul {
+  list-style: none;
+
+}
+.mainSection {
+    display: grid;
+  grid-area: c;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+}
+.mainBanner{
+  background: repeating-linear-gradient(-60deg, #455A64, #455A64 50%, #607D8B 50%, #607D8B 100%);
+  color: #212121
+}
+.userData {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr;
+  }
+.userAva {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("https://i.mycdn.me/i?r=AzEOxUXG5QgodWC3x6hM10Ck1R-lcJzXHF41Z-3h5iO2q2RseSFUMffwQprdS0l0Mec&fn=sqr_288");
+}
